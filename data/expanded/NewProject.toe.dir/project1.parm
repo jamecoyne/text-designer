@@ -1,0 +1,12 @@
+?
+pageindex1 0 1
+w 0 1280
+h 0 720
+helpdat 0 ./help
+top 0 ./out1
+topsmoothness 0 usetop
+dragscript 0 /sys/drag
+dropscript 0 /sys/drop
+parentshortcut 0 Project
+opviewer 0 ./out1
+?

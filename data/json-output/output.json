@@ -1,0 +1,2004 @@
+{
+  ".application": {
+    "#Desk..": null,
+    "#": [
+      "layout"
+    ],
+    "desk": [
+      "-k",
+      "0",
+      "pane1"
+    ],
+    "#pane1": null,
+    "neteditor": [
+      "-c",
+      "0",
+      "-e",
+      "0",
+      "-G",
+      "0.75",
+      "-o",
+      "0",
+      "-r",
+      "1",
+      "-P",
+      "0.8",
+      "-s",
+      "0",
+      "-w",
+      "0",
+      "-x",
+      "0",
+      "-t",
+      "1",
+      "-d",
+      "1",
+      "-g",
+      "0",
+      "-p",
+      "pane1"
+    ],
+    "browser": [
+      "on"
+    ],
+    "winplacement": [
+      "ontop=0",
+      "mode=auto",
+      "posx=0",
+      "posy=0",
+      "sizex=1024",
+      "sizey=768",
+      "enable=1",
+      "perform.path=/perform",
+      "perform.start=0"
+    ]
+  },
+  ".build": {
+    "version": [
+      "099"
+    ],
+    "build": [
+      "2022.35280"
+    ],
+    "time": [
+      "Tue",
+      "Sep",
+      "17",
+      "22:42:03",
+      "2024"
+    ],
+    "osname": [
+      "macOS"
+    ],
+    "osversion": [
+      "14.0"
+    ]
+  },
+  ".grps": {
+    "0": null,
+    "-2": null
+  },
+  ".parm": {
+    "?": null,
+    "opviewer": [
+      "0",
+      "./out1"
+    ]
+  },
+  ".root": {},
+  ".start": {
+    "cookrate": [
+      "60"
+    ],
+    "clock": [
+      "-f",
+      "1",
+      "-s",
+      "1",
+      "-o",
+      "0",
+      "-w",
+      "0"
+    ],
+    "realtime": [
+      "on"
+    ],
+    "viewers": [
+      "off"
+    ],
+    "#expectednodes": [
+      "69",
+      "30977"
+    ],
+    "resetaudioondevicechange": [
+      "off"
+    ]
+  },
+  "local": {
+    "maps": {
+      "master.n": {
+        "COMP:base": null,
+        "v": [
+          "408.5",
+          "324",
+          "1"
+        ],
+        "tile": [
+          "210",
+          "140",
+          "160",
+          "130"
+        ],
+        "flags": [
+          "=",
+          "",
+          "picked",
+          "on",
+          "current",
+          "on",
+          "parlanguage",
+          "0"
+        ],
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        }
+      },
+      "master.parm": {
+        "?": null,
+        "opviewer": [
+          "0",
+          "./out1"
+        ]
+      },
+      "replicator1.n": {
+        "COMP:replicator": null,
+        "tile": [
+          "10",
+          "140",
+          "160",
+          "130"
+        ],
+        "flags": [
+          "=",
+          "",
+          "parlanguage",
+          "0"
+        ],
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        }
+      },
+      "replicator1.parm": {
+        "?": null,
+        "repsuffixstart": [
+          "0",
+          "0"
+        ],
+        "template": [
+          "0",
+          "select2"
+        ],
+        "namefromtable": [
+          "0",
+          "colbyname"
+        ],
+        "colname": [
+          "0",
+          "id"
+        ],
+        "opprefix": [
+          "0",
+          "id"
+        ],
+        "master": [
+          "0",
+          "master"
+        ],
+        "destination": [
+          "17",
+          "\"\"",
+          "me.parent()"
+        ],
+        "callbacks": [
+          "0",
+          "replicator1_callbacks"
+        ],
+        "opviewer": [
+          "0",
+          "./out1"
+        ]
+      },
+      "replicator1.replicator": {
+        "0": null,
+        "3": null
+      },
+      "replicator1_callbacks.n": {
+        "DAT:text": null,
+        "tile": [
+          "10",
+          "-20",
+          "160",
+          "130"
+        ],
+        "flags": [
+          "=",
+          "",
+          "viewer",
+          "1",
+          "parlanguage",
+          "0"
+        ],
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        },
+        "dock": [
+          "replicator1"
+        ],
+        "view": [
+          "8",
+          "0",
+          "1",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1"
+        ]
+      },
+      "replicator1_callbacks.parm": {
+        "?": null,
+        "defaultreadencoding": [
+          "0",
+          "cp1252"
+        ]
+      },
+      "replicator1_callbacks.text": {
+        "2": null,
+        "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u0002\u0019#": [
+          "me",
+          "-",
+          "this",
+          "DAT"
+        ],
+        "#": null,
+        "def": [
+          "replicate(comp,",
+          "allOps,",
+          "newOps,",
+          "template,",
+          "master):"
+        ],
+        "for": [
+          "c",
+          "in",
+          "newOps:"
+        ],
+        "#c.display": [
+          "=",
+          "True"
+        ],
+        "#c.render": [
+          "=",
+          "True"
+        ],
+        "#c.par.display": [
+          "=",
+          "1"
+        ],
+        "#c.par.clone": [
+          "=",
+          "comp.par.master"
+        ],
+        "c.par.clone.expr": [
+          "=",
+          "\"op('../midi/device')[me.digits,",
+          "'definition']",
+          "+",
+          "'/mapmaster1'\""
+        ],
+        "pass": null,
+        "return": null
+      },
+      "select1.n": {
+        "DAT:select": null,
+        "tile": [
+          "-300",
+          "160",
+          "130",
+          "90"
+        ],
+        "flags": [
+          "=",
+          "",
+          "viewer",
+          "1",
+          "parlanguage",
+          "0"
+        ],
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        }
+      },
+      "select1.parm": {
+        "?": null,
+        "dat": [
+          "0",
+          "/local/midi/device"
+        ],
+        "rowindexend": [
+          "17",
+          "0",
+          "\"me.inputs[0].numRows",
+          "-",
+          "1\""
+        ],
+        "rownames": [
+          "0",
+          "*"
+        ],
+        "extractcols": [
+          "0",
+          "bynames"
+        ],
+        "colindexend": [
+          "17",
+          "4",
+          "\"me.inputs[0].numCols",
+          "-",
+          "1\""
+        ],
+        "colnames": [
+          "0",
+          "\"id",
+          "definition\""
+        ]
+      },
+      "select2.n": {
+        "0": [
+          "\tselect1"
+        ],
+        "DAT:select": null,
+        "tile": [
+          "-150",
+          "160",
+          "130",
+          "90"
+        ],
+        "flags": [
+          "=",
+          "",
+          "viewer",
+          "1",
+          "parlanguage",
+          "0"
+        ],
+        "inputs": null,
+        "{": null,
+        "}": null,
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        }
+      },
+      "select2.parm": {
+        "?": null,
+        "extractrows": [
+          "0",
+          "bynames"
+        ],
+        "rowindexend": [
+          "17",
+          "0",
+          "\"me.inputs[0].numRows",
+          "-",
+          "1\""
+        ],
+        "rownames": [
+          "0",
+          "?*"
+        ],
+        "fromcol": [
+          "0",
+          "1"
+        ],
+        "colindexend": [
+          "17",
+          "1",
+          "\"me.inputs[0].numCols",
+          "-",
+          "1\""
+        ],
+        "colnames": [
+          "0",
+          "*"
+        ]
+      }
+    },
+    "maps.n": {
+      "COMP:base": null,
+      "v": [
+        "309.531",
+        "186.79",
+        "0.93596"
+      ],
+      "tile": [
+        "250",
+        "-300",
+        "160",
+        "130"
+      ],
+      "flags": [
+        "=",
+        "",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "maps.parm": {
+      "?": null,
+      "opviewer": [
+        "0",
+        "./id1"
+      ]
+    },
+    "master_beat.beat": {
+      "1": null
+    },
+    "master_beat.chop": {
+      "1": null,
+      "5": null
+    },
+    "master_beat.n": {
+      "CHOP:beat": null,
+      "tile": [
+        "50",
+        "-125",
+        "130",
+        "90"
+      ],
+      "flags": [
+        "=",
+        "",
+        "viewer",
+        "1",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "master_beat.parm": {
+      "?": null,
+      "updateglobal": [
+        "0",
+        "on"
+      ],
+      "timeslice": [
+        "0",
+        "on"
+      ]
+    },
+    "midi.lod": {
+      "0": [
+        "\tcollect_sliders"
+      ],
+      "1": null,
+      "4": null,
+      "60": null,
+      "214": null,
+      "225": null,
+      "4\u0007\u0000\u0000\u0000W.build\u0000version": [
+        "099"
+      ],
+      "build": [
+        "2022.35280"
+      ],
+      "time": [
+        "Tue",
+        "Sep",
+        "17",
+        "22:42:03",
+        "2024"
+      ],
+      "osname": [
+        "macOS"
+      ],
+      "osversion": [
+        "14.0"
+      ],
+      "4\t\u0000\u0000\u0000Ydevice.n\u0000DAT:table": null,
+      "tile": [
+        "50",
+        "-250",
+        "130",
+        "90"
+      ],
+      "flags": [
+        "=",
+        "",
+        "viewer",
+        "1",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      },
+      "4\f\u0000\u0000\u0000Ddevice.parm\u0000?": null,
+      "defaultreadencoding": [
+        "0",
+        "cp1252"
+      ],
+      "removeblank": [
+        "0",
+        "on"
+      ],
+      "rows": [
+        "0",
+        "0"
+      ],
+      "cols": [
+        "0",
+        "0"
+      ],
+      "?": null,
+      "4\r\u0000\u0000\u0000_device.table\u00001": null,
+      "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0005\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002id\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bindevice\u0000\u0000\u0000\u0002\u0000\u0000\u0000\toutdevice\u0000\u0000\u0000\u0002\u0000\u0000\u0000": null,
+      "definition\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0007channel4\u000b\u0000\u0000\u0000rtemplate.n\u0000COMP:base": null,
+      "v": [
+        "578.908",
+        "181.843",
+        "0.43217"
+      ],
+      "4\u000e\u0000\u0000\u0000\u0016template.parm\u0000?": null,
+      "opviewer": [
+        "0",
+        "./out1"
+      ],
+      "64\ttemplate\u00004\u0007\u0000\u0000\u0000iicon.n\u0000TOP:null": null,
+      "inputs": null,
+      "{": null,
+      "}": null,
+      "\u0000\u0000\u0000.icon.parm\u0000?": null,
+      "fillmode": [
+        "0",
+        "useinput"
+      ],
+      "filtertype": [
+        "0",
+        "useinput"
+      ],
+      "4\b\u0000\u0000\u0000Stext1.n\u0000TOP:text": null,
+      "4\u000b\u0000\u0000\u0000�text1.parm\u0000?": null,
+      "text": [
+        "0",
+        "\"User",
+        "Map\""
+      ],
+      "legacyparsing": [
+        "0",
+        "on"
+      ],
+      "leadingzero": [
+        "0",
+        "off"
+      ],
+      "chopvaluereplace": [
+        "0",
+        "on"
+      ],
+      "dispmethod": [
+        "0",
+        "polygon"
+      ],
+      "fontsizex": [
+        "0",
+        "24.6"
+      ],
+      "fontsizexunit": [
+        "0",
+        "pixels"
+      ],
+      "fontsizeyunit": [
+        "0",
+        "pixels"
+      ],
+      "resolutionw": [
+        "0",
+        "200"
+      ],
+      "resolutionh": [
+        "0",
+        "100"
+      ],
+      "resmult": [
+        "0",
+        "off"
+      ],
+      "\u0000\u0000\u0000Xbuttons.n\u0000DAT:table": null,
+      "4\r\u0000\u0000\u0000Ebuttons.parm\u0000?": null,
+      "4\u000e\u0000\u0000\u0002�buttons.table\u00001": null,
+      "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0003\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b1\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?": [
+        "41",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "41",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b2\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "42",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "42",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b3\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "43",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "43",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b4\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "44",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "44",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b5\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "45",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "45",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b6\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "46",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "46",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b7\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "47",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "47",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b8\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "48",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "48",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002b9\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "49",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "49",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003b10\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4a",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4a",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003b11\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4b",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4b",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003b12\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4c",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4c",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003b13\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4d",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4d",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003b14\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4e",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4e",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003b15\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4f",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "4f",
+        "00\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003b16\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "50",
+        "7f\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "50",
+        "004"
+      ],
+      "\u0000\u0000\u0000Xsliders.n\u0000DAT:table": null,
+      "4\r\u0000\u0000\u0000Esliders.parm\u0000?": null,
+      "4\u000e\u0000\u0000\u0001�sliders.table\u00001": null,
+      "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0010\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s1\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?": [
+        "51",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s2\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "52",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s3\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "53",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s4\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "54",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s5\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "55",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s6\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "56",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s7\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "57",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s8\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "58",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0002s9\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "01",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003s10\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "02",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003s11\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "03",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003s12\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "04",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003s13\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "05",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003s14\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "06",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003s15\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "07",
+        "--\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0003s16\u0000\u0000\u0000\u0002\u0000\u0000\u0000\bb?",
+        "08",
+        "--4\r\u0000\u0000\u0000Vattributes.n\u0000DAT:table"
+      ],
+      "4\u0010\u0000\u0000\u0000Dattributes.parm\u0000?": null,
+      "4\u0011\u0000\u0000\u00006attributes.table\u00001": null,
+      "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0004name\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u000fUser": [
+        "Device",
+        "Map4\r\u0000\u0000\u0000zmapmaster1.n\u0000COMP:base"
+      ],
+      "4\u0010\u0000\u0000\u0000\u0016mapmaster1.parm\u0000?": null,
+      "64\u000bmapmaster1\u00004\u0007\u0000\u0000\u0000�out1.n\u0000CHOP:out": null,
+      "view": [
+        "8",
+        "0",
+        "1",
+        "1",
+        "1",
+        "0",
+        "0.388199",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "\u0000\u0000\u0000=out1.parm\u0000?": null,
+      "exportmethod": [
+        "0",
+        "autoname"
+      ],
+      "autoexportroot": [
+        "17",
+        "\"\"",
+        "me.parent()"
+      ],
+      "\u0000\u0000\u0000wbuttons.n\u0000CHOP:null": null,
+      "4\r\u0000\u0000\u0000%buttons.parm\u0000?": null,
+      "\u0000\u0000\u0000\\midiout.n\u0000CHOP:midiout": null,
+      "4\r\u0000\u0000\u0000�midiout.parm\u0000?": null,
+      "device": [
+        "0",
+        "/local/midi/device"
+      ],
+      "id": [
+        "49",
+        "$OPD",
+        "parent().digits"
+      ],
+      "file": [
+        "0",
+        "untitled.midi"
+      ],
+      "prefix": [
+        "0",
+        "ch"
+      ],
+      "notename": [
+        "0",
+        "n"
+      ],
+      "aftername": [
+        "0",
+        "a"
+      ],
+      "pressname": [
+        "0",
+        "pr"
+      ],
+      "pitchname": [
+        "0",
+        "pw"
+      ],
+      "controlname": [
+        "0",
+        "c"
+      ],
+      "progname": [
+        "0",
+        "pc"
+      ],
+      "timeslice": [
+        "0",
+        "on"
+      ],
+      "4\r\u0000\u0000\u0000\u0004midiout.chop\u00005": null,
+      "4\u000b\u0000\u0000\u0000jmidiout.ts\u000065538": null,
+      "rate": [
+        "16",
+        "60",
+        "me.time.rate"
+      ],
+      "start": [
+        "=",
+        "214"
+      ],
+      "tracklength": [
+        "=",
+        "12"
+      ],
+      "tracks": [
+        "=",
+        "0"
+      ],
+      "\u0000\u0000\u0000wsliders.n\u0000CHOP:null": null,
+      "4\r\u0000\u0000\u0000%sliders.parm\u0000?": null,
+      "4\f\u0000\u0000\u0000~chopexec1.n\u0000DAT:chopexec": null,
+      "4\u000f\u0000\u0000\u0000Schopexec1.parm\u0000?": null,
+      "fromop": [
+        "17",
+        "\"\"",
+        "me.parent()"
+      ],
+      "chop": [
+        "0",
+        "\"sliders",
+        "buttons\""
+      ],
+      "4\u000f\u0000\u0000\u0003fchopexec1.text\u00002": null,
+      "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u0003K#": [
+        "me",
+        "-",
+        "this",
+        "DAT"
+      ],
+      "#": [
+        "op('midiout').sendControl(ch,",
+        "index,",
+        "val)"
+      ],
+      "def": [
+        "valueChange(channel,",
+        "sampleIndex,",
+        "val,",
+        "prev):"
+      ],
+      "return": null,
+      "4\f\u0000\u0000\u0000[midiinmap.n\u0000CHOP:midiinmap": null,
+      "4\u000f\u0000\u0000\u0000�midiinmap.parm\u0000?": null,
+      "sliders": [
+        "0",
+        "*"
+      ],
+      "buttons": [
+        "0",
+        "*"
+      ],
+      "4\u0012\u0000\u0000\u0000\\collect_buttons.n\u0000CHOP:constant": null,
+      "4\u0015\u0000\u0000\u0000ccollect_buttons.parm\u0000?": null,
+      "name0": [
+        "0",
+        "chan1"
+      ],
+      "4\u0012\u0000\u0000\u0000\\collect_sliders.n\u0000CHOP:constant": null,
+      "4\u0015\u0000\u0000\u0000ccollect_sliders.parm\u0000?": null,
+      "554\u000e\u0000\u0000\u0000Ymidi_inputs.n\u0000DAT:table": null,
+      "4\u0011\u0000\u0000\u0000Dmidi_inputs.parm\u0000?": null,
+      "4\u0012\u0000\u0000\u0000}midi_inputs.table\u00001": null,
+      "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\fNetwork": [
+        "test\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0010IAC",
+        "Driver",
+        "Bus",
+        "1\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0012IAC",
+        "Driver",
+        "jadenet\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u001cIAC",
+        "Driver",
+        "Network",
+        "Session",
+        "3"
+      ],
+      "4\u0011\u0000\u0000\u0000\u0016userdevices.parm\u0000?": null,
+      "4\u000f\u0000\u0000\u0000Xmidi_outputs.n\u0000DAT:table": null,
+      "4\u0012\u0000\u0000\u0000Dmidi_outputs.parm\u0000?": null,
+      "4\u0013\u0000\u0000\u0000}midi_outputs.table\u00001": null
+    },
+    "midi.n": {
+      "COMP:base": null,
+      "v": [
+        "144.459",
+        "286.388",
+        "0.840696"
+      ],
+      "tile": [
+        "50",
+        "-300",
+        "160",
+        "130"
+      ],
+      "flags": [
+        "=",
+        "",
+        "current",
+        "on",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "midi.parm": {
+      "?": null,
+      "opviewer": [
+        "0",
+        "./device"
+      ],
+      "loadondemand": [
+        "0",
+        "on"
+      ]
+    },
+    "set_variables.n": {
+      "DAT:table": null,
+      "tile": [
+        "25",
+        "0",
+        "130",
+        "90"
+      ],
+      "flags": [
+        "=",
+        "",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "set_variables.table": {
+      "1": null,
+      "*\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0007TOENAME\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0010NewProject.1.toe": null
+    },
+    "shortcuts.n": {
+      "DAT:filein": null,
+      "tile": [
+        "325",
+        "0",
+        "130",
+        "90"
+      ],
+      "flags": [
+        "=",
+        "",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "shortcuts.parm": {
+      "?": null,
+      "file": [
+        "17",
+        "\"\"",
+        "\"app.configFolder",
+        "+",
+        "'/PanelShortcuts.txt'\""
+      ],
+      "converttable": [
+        "0",
+        "on"
+      ]
+    },
+    "time.n": {
+      "COMP:time": null,
+      "tile": [
+        "450",
+        "-300",
+        "160",
+        "130"
+      ],
+      "flags": [
+        "=",
+        "",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "time.parm": {
+      "?": null,
+      "rate": [
+        "17",
+        "60",
+        "cookRate()"
+      ],
+      "opviewer": [
+        "0",
+        "./out1"
+      ],
+      "clone": [
+        "0",
+        "/sys/local/time"
+      ]
+    },
+    "variables.n": {
+      "0": [
+        "\tset_variables"
+      ],
+      "DAT:null": null,
+      "tile": [
+        "175",
+        "0",
+        "130",
+        "90"
+      ],
+      "flags": [
+        "=",
+        "",
+        "parlanguage",
+        "0"
+      ],
+      "inputs": null,
+      "{": null,
+      "}": null,
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    }
+  },
+  "local.n": {
+    "COMP:base": null,
+    "tile": [
+      "-200",
+      "-725",
+      "160",
+      "130"
+    ],
+    "flags": [
+      "=",
+      "",
+      "viewer",
+      "1",
+      "parlanguage",
+      "0"
+    ],
+    "color": {
+      "r": 0.55,
+      "g": 0.55,
+      "b": 0.55
+    }
+  },
+  "local.parm": {
+    "?": null,
+    "opviewer": [
+      "0",
+      "./variables"
+    ]
+  },
+  "perform.n": {
+    "COMP:window": null,
+    "comment": "\"Perform Mode configuration:\\\\nPress F1 to enter Perform Mode, ESC to exit\"",
+    "tile": [
+      "-200",
+      "40",
+      "160",
+      "130"
+    ],
+    "flags": [
+      "=",
+      "",
+      "picked",
+      "on",
+      "viewer",
+      "1",
+      "parlanguage",
+      "0"
+    ],
+    "color": {
+      "r": 0.55,
+      "g": 0.55,
+      "b": 0.55
+    }
+  },
+  "perform.parm": {
+    "?": null,
+    "winop": [
+      "0",
+      "project1"
+    ],
+    "justifyh": [
+      "0",
+      "center"
+    ],
+    "justifyv": [
+      "0",
+      "center"
+    ],
+    "opviewer": [
+      "0",
+      "./out1"
+    ]
+  },
+  "project1": {
+    "chopto1.n": {
+      "TOP:chopto": null,
+      "tile": [
+        "50",
+        "150",
+        "130",
+        "48"
+      ],
+      "flags": [
+        "=",
+        "",
+        "viewer",
+        "1",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "chopto1.parm": {
+      "?": null,
+      "chop": [
+        "0",
+        "noise1"
+      ],
+      "dataformat": [
+        "0",
+        "legacy"
+      ]
+    },
+    "displace1.n": {
+      "0": [
+        "\tmoviefilein1"
+      ],
+      "1": [
+        "\tchopto1"
+      ],
+      "TOP:displace": null,
+      "tile": [
+        "260",
+        "200",
+        "130",
+        "72"
+      ],
+      "flags": [
+        "=",
+        "",
+        "viewer",
+        "1",
+        "parlanguage",
+        "0"
+      ],
+      "inputs": null,
+      "{": null,
+      "}": null,
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      },
+      "view": [
+        "3",
+        "0",
+        "0",
+        "1",
+        "1",
+        "0"
+      ]
+    },
+    "displace1.parm": {
+      "?": null,
+      "horzsource": [
+        "0",
+        "none"
+      ],
+      "vertsource": [
+        "0",
+        "red"
+      ],
+      "displaceweightx": [
+        "0",
+        "0"
+      ],
+      "displaceweighty": [
+        "0",
+        "0.1"
+      ],
+      "extend": [
+        "0",
+        "mirror"
+      ]
+    },
+    "geo1": {
+      "box1.n": {
+        "SOP:box": null,
+        "tile": [
+          "0",
+          "125",
+          "129",
+          "90"
+        ],
+        "flags": [
+          "=",
+          "",
+          "viewer",
+          "1",
+          "parlanguage",
+          "0"
+        ],
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        },
+        "view": [
+          "63",
+          "0.2",
+          "1",
+          "1",
+          "0",
+          "0",
+          "1",
+          "2.41649",
+          "0.00327869",
+          "1.69035",
+          "2.07711",
+          "0",
+          "0",
+          "2.52684",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "-2.52684",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0.110352",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "15",
+          "1",
+          "1",
+          "1",
+          "195",
+          "4883",
+          "1",
+          "-1",
+          "1",
+          "1",
+          "4",
+          "0",
+          "0",
+          "2",
+          "0",
+          "0"
+        ]
+      },
+      "box1.parm": {
+        "?": null,
+        "reverseanchors": [
+          "0",
+          "on"
+        ],
+        "texture": [
+          "0",
+          "off"
+        ]
+      },
+      "in1.n": {
+        "TOP:in": null,
+        "tile": [
+          "0",
+          "0",
+          "130",
+          "80"
+        ],
+        "flags": [
+          "=",
+          "",
+          "viewer",
+          "1",
+          "parlanguage",
+          "0"
+        ],
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        }
+      },
+      "in1.parm": {
+        "?": null,
+        "fillmode": [
+          "0",
+          "useinput"
+        ],
+        "filtertype": [
+          "0",
+          "useinput"
+        ]
+      },
+      "out1.n": {
+        "0": [
+          "\tin1"
+        ],
+        "TOP:out": null,
+        "tile": [
+          "195",
+          "0",
+          "130",
+          "80"
+        ],
+        "flags": [
+          "=",
+          "",
+          "current",
+          "on",
+          "viewer",
+          "1",
+          "parlanguage",
+          "0"
+        ],
+        "inputs": null,
+        "{": null,
+        "}": null,
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        }
+      },
+      "out1.parm": {
+        "?": null,
+        "fillmode": [
+          "0",
+          "useinput"
+        ],
+        "filtertype": [
+          "0",
+          "useinput"
+        ]
+      },
+      "phong1.n": {
+        "MAT:phong": null,
+        "tile": [
+          "0",
+          "-125",
+          "130",
+          "90"
+        ],
+        "flags": [
+          "=",
+          "",
+          "viewer",
+          "1",
+          "parlanguage",
+          "0"
+        ],
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        }
+      },
+      "phong1.parm": {
+        "?": null,
+        "diffr": [
+          "0",
+          "0.952"
+        ],
+        "diffg": [
+          "0",
+          "0.952"
+        ],
+        "diffb": [
+          "0",
+          "0.952"
+        ],
+        "colormap": [
+          "0",
+          "in1"
+        ],
+        "pcaptpath": [
+          "0",
+          "pCaptPath0"
+        ],
+        "pcaptdata": [
+          "0",
+          "pCaptData0"
+        ],
+        "blending": [
+          "0",
+          "on"
+        ],
+        "legacyalphabehavior": [
+          "0",
+          "on"
+        ]
+      },
+      "texture1.n": {
+        "0": [
+          "\tbox1"
+        ],
+        "SOP:texture": null,
+        "tile": [
+          "200",
+          "125",
+          "130",
+          "90"
+        ],
+        "flags": [
+          "=",
+          "",
+          "viewer",
+          "1",
+          "render",
+          "on",
+          "display",
+          "on",
+          "parlanguage",
+          "0"
+        ],
+        "inputs": null,
+        "{": null,
+        "}": null,
+        "color": {
+          "r": 0.55,
+          "g": 0.55,
+          "b": 0.55
+        },
+        "view": [
+          "63",
+          "0.2",
+          "1",
+          "1",
+          "0",
+          "0",
+          "1",
+          "2.43301",
+          "0.00327869",
+          "1.70492",
+          "2.08674",
+          "0",
+          "0",
+          "2.52582",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "-2.52582",
+          "1",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0.0928035",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "0",
+          "0",
+          "0",
+          "1",
+          "15",
+          "1",
+          "1",
+          "1",
+          "195",
+          "4883",
+          "1",
+          "-1",
+          "1",
+          "1",
+          "4",
+          "0",
+          "0",
+          "2",
+          "0",
+          "0"
+        ]
+      },
+      "texture1.parm": {
+        "?": null,
+        "type": [
+          "0",
+          "face"
+        ],
+        "offsetu": [
+          "0",
+          "0.5"
+        ],
+        "offsetv": [
+          "0",
+          "0.5"
+        ],
+        "offsetw": [
+          "0",
+          "0.5"
+        ]
+      }
+    },
+    "geo1.gnode": {
+      "1": null,
+      "UT_DMatrix4": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    },
+    "geo1.n": {
+      "COMP:geo": null,
+      "tile": [
+        "450",
+        "170",
+        "159",
+        "130"
+      ],
+      "flags": [
+        "=",
+        "",
+        "viewer",
+        "1",
+        "activate",
+        "on",
+        "render",
+        "on",
+        "display",
+        "on",
+        "pickable",
+        "on",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      },
+      "view": [
+        "34",
+        "0.2",
+        "1",
+        "1",
+        "0",
+        "0",
+        "1",
+        "-0.5",
+        "0.5",
+        "-0.5",
+        "0.5",
+        "-0.5",
+        "0.5",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0.552545",
+        "0.521786",
+        "-0.649949",
+        "0",
+        "1.18275e-05",
+        "0.779794",
+        "0.626037",
+        "0",
+        "0.833483",
+        "-0.345921",
+        "0.430865",
+        "0",
+        "-2.01565e-09",
+        "-3.26002e-09",
+        "-3.73845",
+        "1",
+        "15",
+        "1",
+        "1",
+        "1",
+        "195",
+        "4883",
+        "1",
+        "-1",
+        "1",
+        "1",
+        "9",
+        "0",
+        "0",
+        "3",
+        "0",
+        "1"
+      ]
+    },
+    "geo1.network": {
+      "0": [
+        "\tdisplace1"
+      ],
+      "1": null,
+      "compinputs": null,
+      "{": null,
+      "in1": null,
+      "TOP": null,
+      "}": null
+    },
+    "geo1.parm": {
+      "?": null,
+      "instancerottoforward": [
+        "0",
+        "posz"
+      ],
+      "instancecolorpremult": [
+        "0",
+        "alreadypremult"
+      ],
+      "material": [
+        "0",
+        "./phong1"
+      ],
+      "opviewer": [
+        "0",
+        "./out1"
+      ]
+    },
+    "moviefilein1.n": {
+      "TOP:moviefilein": null,
+      "tile": [
+        "50",
+        "240",
+        "130",
+        "72"
+      ],
+      "flags": [
+        "=",
+        "",
+        "current",
+        "on",
+        "viewer",
+        "1",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "moviefilein1.parm": {
+      "?": null,
+      "file": [
+        "17",
+        "\"\"",
+        "app.samplesFolder+'/Map/Jellybeans.1.jpg'"
+      ],
+      "index": [
+        "16",
+        "396",
+        "me.time.frame"
+      ]
+    },
+    "noise1.n": {
+      "CHOP:noise": null,
+      "tile": [
+        "50",
+        "30",
+        "130",
+        "90"
+      ],
+      "flags": [
+        "=",
+        "",
+        "viewer",
+        "1",
+        "parlanguage",
+        "0"
+      ],
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      },
+      "view": [
+        "5",
+        "-1",
+        "1",
+        "0.034375",
+        "-1.5",
+        "1.5",
+        "4",
+        "2",
+        "41368",
+        "1",
+        "0"
+      ]
+    },
+    "noise1.parm": {
+      "?": null,
+      "type": [
+        "0",
+        "hermite"
+      ],
+      "rough": [
+        "0",
+        "0.25"
+      ],
+      "tx": [
+        "49",
+        "6531",
+        "absTime.frame*.6"
+      ],
+      "ty": [
+        "32",
+        "0"
+      ],
+      "tz": [
+        "32",
+        "0"
+      ],
+      "constraint": [
+        "0",
+        "offset"
+      ],
+      "constrmean": [
+        "0",
+        "0.5"
+      ],
+      "channelname": [
+        "0",
+        "chan1"
+      ],
+      "autoexportroot": [
+        "17",
+        "\"\"",
+        "me.parent()"
+      ]
+    },
+    "out1.n": {
+      "0": [
+        "\tgeo1/out1"
+      ],
+      "TOP:out": null,
+      "tile": [
+        "680",
+        "200",
+        "130",
+        "72"
+      ],
+      "flags": [
+        "=",
+        "",
+        "viewer",
+        "1",
+        "parlanguage",
+        "0"
+      ],
+      "inputs": null,
+      "{": null,
+      "}": null,
+      "color": {
+        "r": 0.55,
+        "g": 0.55,
+        "b": 0.55
+      }
+    },
+    "out1.parm": {
+      "?": null,
+      "fillmode": [
+        "0",
+        "useinput"
+      ],
+      "filtertype": [
+        "0",
+        "useinput"
+      ]
+    }
+  },
+  "project1.n": {
+    "COMP:container": null,
+    "tile": [
+      "200",
+      "100",
+      "400",
+      "244"
+    ],
+    "flags": [
+      "=",
+      "",
+      "picked",
+      "on",
+      "current",
+      "on",
+      "viewer",
+      "1",
+      "parlanguage",
+      "0"
+    ],
+    "color": {
+      "r": 0.56,
+      "g": 0.56,
+      "b": 0.56
+    }
+  },
+  "project1.panel": {
+    "1": null,
+    "3": null,
+    "6": null,
+    "u": [
+      "0.54"
+    ],
+    "v": [
+      "0.720528"
+    ],
+    "trueu": [
+      "0.54"
+    ],
+    "truev": [
+      "0.720528"
+    ],
+    "screenw": [
+      "400"
+    ],
+    "screenh": [
+      "300"
+    ]
+  },
+  "project1.parm": {
+    "?": null,
+    "pageindex1": [
+      "0",
+      "1"
+    ],
+    "w": [
+      "0",
+      "1280"
+    ],
+    "h": [
+      "0",
+      "720"
+    ],
+    "helpdat": [
+      "0",
+      "./help"
+    ],
+    "top": [
+      "0",
+      "./out1"
+    ],
+    "topsmoothness": [
+      "0",
+      "usetop"
+    ],
+    "dragscript": [
+      "0",
+      "/sys/drag"
+    ],
+    "dropscript": [
+      "0",
+      "/sys/drop"
+    ],
+    "parentshortcut": [
+      "0",
+      "Project"
+    ],
+    "opviewer": [
+      "0",
+      "./out1"
+    ]
+  }
+}

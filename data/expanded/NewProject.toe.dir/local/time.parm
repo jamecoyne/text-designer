@@ -1,0 +1,5 @@
+?
+rate 17 60 cookRate()
+opviewer 0 ./out1
+clone 0 /sys/local/time
+?
